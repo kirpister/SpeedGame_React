@@ -1,38 +1,120 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Teko:wght@500&display=swap');
+
+:root {
+  --orange: #f5610c;
+  --main-font: 'Teko', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: rgb(6,6,6);
+  background-image: radial-gradient(circle, rgba(6,6,6,1) 55%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Bungee Spice', cursive;
+  font-size: 3rem;
   text-align: center;
+  margin-top: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: var(--orange);
+  font-family: var(--main-font);
+  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 5px;
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  color: var(--orange);
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.6rem;
+  font-family: var(--main-font);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-image: linear-gradient(45deg, #f9411c 0%, #F09819  51%, #f9411c  100%);
+  color: rgb(9, 8, 8);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.btns-grid {
+  text-align: center;
+  display: grid;
+  width: 80px;
+  justify-items: center;
+  align-items: center;
+  margin-left: 47%;
+}
+
+/* .btn-2, .btn-1 {
+  grid-column: 1;
+  grid-row: 1;
+} */
+
+.gamearea {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+/* GAME OVER MODAL */
+
+.overlay {
+  background: rgba(39, 38, 40, 0.664);
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal {
+  width: 55vw;
+  height: 55vh;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.324);
+  background: rgb(6,6,6);
+  background-image: radial-gradient(circle, rgba(6,6,6,1) 55%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
+  position: relative;
+}
+
+.modal h4 {
+  font-family: 'Teko', sans-serif;
+  color: var(--orange);
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  
+}
+
+.close-btn {
+  width: 150px;
+  position: absolute;
+  bottom: 1rem;
+  left: 40%;
 }
