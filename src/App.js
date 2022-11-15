@@ -20,7 +20,7 @@ class App extends Component {
     score: 0,
     circles: [1, 2, 3, 4],
     current: undefined,
-    pace: 1000,
+    pace: 1200,
     rounds: 0,
     gameOver: false,
     gameOn: false,
@@ -84,19 +84,19 @@ class App extends Component {
   };
 
   stopGame = () => {
+
     bgSound.pause();
     stopSound.play();
 
     clearTimeout(this.timer);
     
-    this.setState({ gameOver: true, });
+    this.setState({ gameOver: true });
   };
 
   closeModal = () => {
-    // this.setState({
-    //   gameOver: !this.state.gameOver,
-    // })
     window.location.reload();
+     // this.setState({
+    //   gameOver: !this.state.gameOver,})
   };
 
   render() {
@@ -104,29 +104,34 @@ class App extends Component {
     return (
       <div>
         <h1>SPEEDGAME!</h1>
-        <h3>Your score is - {this.state.score}</h3>
+        <h3>Collect as many records as you can!</h3>
+        <h3>{this.state.score} records collected</h3>
 
         <div className='gamearea'>
+
          {this.state.circles.map((circle, i) =>
            <Circle key={i} id={i + 1} 
            gameStatus={this.state.gameOn}
            click={() => this.clickHandler(i)} 
            active={this.state.current === i}/>
            )};
-        </div>
 
+        </div>
 
         <div className='btns-grid'>
 
+          {this.state.gameOn ? 
         <button className='btn-1' onClick={this.stopGame}>STOP</button>
-        <button className='btn-2' onClick={this.startGame}>START</button>
+           :
+        <button className='btn-2' onClick={this.startGame}>START</button>}
 
         </div>
 
-        {this.state.gameOver && 
+        {this.state.gameOver &&
           <GameOver 
         closeModal={this.closeModal}
-        score={this.state.score}/>}
+        score={this.state.score}
+        />}
 
       </div>
     );
