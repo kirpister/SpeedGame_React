@@ -4,7 +4,7 @@ Classic game recreated with React as part of BCH Full Stack Developer program.
 
 ### Live Page
 
-Make Spede proud and [GO PLAY](https://pages.github.com/).
+Make Spede proud and [GO PLAY](https://regal-bunny-f5d9f3.netlify.app).
 
 ### Technologies Used
 
