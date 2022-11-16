@@ -10,8 +10,13 @@
         repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
     background-size: 50% 100%, 100% 50%, 100% 100%;
     cursor: pointer;
+    animation: rotation 6s infinite linear;
   }
-  
+
+  .circle:nth-child(odd) {
+    animation: rotation2 6s infinite linear;
+  }
+
   .circle:after {
     position: absolute;
     top: 55%; left: 55%;
@@ -31,4 +36,22 @@
         repeating-radial-gradient(#807973, #7b7875 4px, #161616 5px, #7a7673 6px);
     background-size: 50% 100%, 100% 50%, 100% 100%;
     display: block;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes rotation2 {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
