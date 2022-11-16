@@ -18,6 +18,7 @@ body {
   background: rgb(6,6,6);
   background-image: radial-gradient(circle, rgba(6,6,6,1) 55%, rgba(241,151,15,1) 78%, rgba(238,3,19,1) 100%);
   background-attachment: fixed;
+  position: relative;
 }
 
 h1 {
@@ -127,3 +128,8 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* 
+@media screen and (min-width: 700px) {
+
+} */

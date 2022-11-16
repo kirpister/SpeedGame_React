@@ -7,10 +7,10 @@ const Circle = (props) => {
         <div className={`circle ${props.active ? 'active' : ''}`}
 
         onClick={props.gameStatus ? props.click : null}> 
-        {/* <p>id={props.id}</p> */}
+      
         </div>
        
-    );
+    )
 };
 
 export default Circle;

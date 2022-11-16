@@ -106,7 +106,7 @@ closeModal = () => {
            gameStatus={this.state.gameOn}
            click={() => this.clickHandler(i)} 
            active={this.state.current === i}/>
-           )};
+           )}
 
         </div>
 
