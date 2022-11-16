@@ -28,17 +28,9 @@ class App extends Component {
 
   timer = undefined;
 
-  clickPlay = () => {
-    if (clickSound.paused) {
-      clickSound.play();
-    } else {
-      clickSound.currentTime();
-    }
-  };
+clickHandler = (i) => {
 
-  clickHandler = (i) => {
-
-    this.clickPlay();
+    clickSound.play();
 
     if (this.state.current !== i) {
       this.stopGame();
@@ -47,12 +39,12 @@ class App extends Component {
 
     this.setState({ 
       score: this.state.score + 3,
-      rounds: this.state.rounds -1,
+      rounds: this.state.rounds - 1,
      });
     
-  };
+};
 
-  nextCircle = () => {
+nextCircle = () => {
 
     if (this.state.rounds >= 3) {
       this.stopGame();
@@ -72,18 +64,18 @@ class App extends Component {
     });
 
     this.timer = setTimeout(this.nextCircle, this.state.pace);
-  };
+};
 
-  startGame = () => {
+startGame = () => {
 
     bgSound.play();
 
     this.nextCircle();
     this.setState({ gameOn: !this.state.gameOn });
     
-  };
+};
 
-  stopGame = () => {
+stopGame = () => {
 
     bgSound.pause();
     stopSound.play();
@@ -91,13 +83,13 @@ class App extends Component {
     clearTimeout(this.timer);
     
     this.setState({ gameOver: true });
-  };
+};
 
-  closeModal = () => {
+closeModal = () => {
     window.location.reload();
      // this.setState({
     //   gameOver: !this.state.gameOver,})
-  };
+};
 
   render() {
     
@@ -106,7 +98,7 @@ class App extends Component {
         <h1>SPEEDGAME!</h1>
         <h3>Collect as many records as you can!</h3>
         <h3>{this.state.score} records collected</h3>
-
+       
         <div className='gamearea'>
 
          {this.state.circles.map((circle, i) =>
@@ -120,7 +112,7 @@ class App extends Component {
 
         <div className='btns-grid'>
 
-          {this.state.gameOn ? 
+        {this.state.gameOn ? 
         <button className='btn-1' onClick={this.stopGame}>STOP</button>
            :
         <button className='btn-2' onClick={this.startGame}>START</button>}
@@ -141,6 +133,3 @@ class App extends Component {
 export default App;
 
 
-
-
-// state, handler, pass to component
