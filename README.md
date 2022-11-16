@@ -1,6 +1,6 @@
 ## SpeedGame 
 
-Classic game recreated with React as part of [BCH](http://bc.fi) Full Stack Developer program. Features include cool funky background music to get you into the mood for collecting some records and conditional messages based on records collected etc. :tada:
+Classic game recreated with React as part of [BCH](http://bc.fi) Full Stack Developer program. Features include cool funky background music to get you into the mood for collecting some records and conditional messages based on amount of records collected etc. :tada:
 
 ### Live Page
 
