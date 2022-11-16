@@ -87,8 +87,6 @@ stopGame = () => {
 
 closeModal = () => {
     window.location.reload();
-     // this.setState({
-    //   gameOver: !this.state.gameOver,})
 };
 
   render() {

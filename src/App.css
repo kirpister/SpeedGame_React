@@ -60,7 +60,7 @@ button {
   border: none;
   padding: 10px;
   width: 100px;
-  font-family: 'Teko', sans-serif;
+  font-family: var(--main-font);
   font-size: 1.2rem;
   font-weight: bolder;
   text-align: center;
@@ -112,7 +112,7 @@ button {
 }
 
 .modal h4 {
-  font-family: 'Teko', sans-serif;
+  font-family: var(--main-font);
   color: var(--orange);
   text-align: center;
   margin: 1.5rem;
