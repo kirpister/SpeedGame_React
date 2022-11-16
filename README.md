@@ -4,7 +4,7 @@ Classic game recreated with React as part of [BCH](http://bc.fi) Full Stack Deve
 
 ### Live Page
 
-Make Spede proud and [GO PLAY](https://regal-bunny-f5d9f3.netlify.app).
+Make Spede proud and [GO PLAY](https://speedy-records.netlify.app/).
 
 Speedgame is currently available to be played on desktop only, mobile is not supported. Future improvements may occur. 
 
