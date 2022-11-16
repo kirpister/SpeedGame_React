@@ -1,10 +1,12 @@
 ## SpeedGame
 
-Classic game recreated with React as part of BCH Full Stack Developer program. 
+Classic game recreated with React as part of BCH Full Stack Developer program. Features include cool funky background music to get you into the mood for collecting some records and conditional messages based on records collected etc.
 
 ### Live Page
 
 Make Spede proud and [GO PLAY](https://regal-bunny-f5d9f3.netlify.app).
+
+Speedgame is currently available to be played on desktop only, mobile is not supported. 
 
 ### Technologies Used
 
