@@ -1,6 +1,6 @@
-## SpeedGame
+## SpeedGame 
 
-Classic game recreated with React as part of BCH Full Stack Developer program. Features include cool funky background music to get you into the mood for collecting some records and conditional messages based on records collected etc.
+Classic game recreated with React as part of BCH Full Stack Developer program. Features include cool funky background music to get you into the mood for collecting some records and conditional messages based on records collected etc. :tada:
 
 ### Live Page
 
@@ -16,6 +16,8 @@ Built with
 - HTML
 
 ### Screenshot 
+
+Example of the game in action, highlighted record to be clicked quickly!
 
 <img width="700" alt="speedgame" src="https://user-images.githubusercontent.com/77112303/202126901-6df33fc4-c64c-46c6-812d-8273147aa3d2.png">
 
