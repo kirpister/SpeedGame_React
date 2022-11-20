@@ -13,6 +13,7 @@ Speedgame is currently available to be played on desktop only, mobile is not sup
 Built with
 
 - REACT
+- JS
 - CSS
 - HTML
 
